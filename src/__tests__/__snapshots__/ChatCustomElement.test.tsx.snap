@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ChatCustomElement should match snapshot 1`] = `
+<div
+  class="custom-chat-element"
+>
+  <cds-aichat-react />
+</div>
+`;
