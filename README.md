@@ -23,3 +23,15 @@ npm run test:watch
 
 - `src/__tests__/ChatCustomElement.test.jsx` - Snapshot tests for ChatCustomElement component
 - `src/__tests__/ChatContainer.test.jsx` - Snapshot tests for ChatContainer component
+
+## Repro demo
+
+1. Run `npm install; npm test` to validate that the tests currently pass
+2. Update the `@carbon/ai-chat` version to `0.4.0`, `0.5.0`, or `0.5.1`
+3. Run `npm install; npm test`
+
+Expected: Tests continue to pass
+Actual: Tests fail with errors like:
+```
+    Cannot find module '@carbon/ai-chat' from 'src/__tests__/ChatContainer.test.tsx'
+```

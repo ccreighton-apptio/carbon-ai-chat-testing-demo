@@ -10,10 +10,10 @@ module.exports = {
     "\\.(css|less|scss)$": "identity-obj-proxy",
   },
   testEnvironment: "jsdom",
+  setupFilesAfterEnv: ["<rootDir>/src/jest.setup.ts"],
   transformIgnorePatterns: ["node_modules/(?!(@carbon|lit-html|lit-element|lit|@lit|@lit-labs)/)"],
   moduleDirectories: ["node_modules", "src"],
   clearMocks: true,
   resetMocks: true,
   restoreMocks: true,
-  resetModules: true,
 };

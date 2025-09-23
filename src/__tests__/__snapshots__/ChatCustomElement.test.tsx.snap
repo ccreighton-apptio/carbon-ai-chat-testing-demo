@@ -3,7 +3,33 @@
 exports[`ChatCustomElement should match snapshot 1`] = `
 <div
   class="custom-chat-element"
+  style="width: 0px; height: 0px;"
 >
-  <cds-aichat-react />
+  <cds-aichat-react>
+    <div
+      slot="aiTooltipAfterDescriptionElement"
+    />
+    <div
+      slot="welcomeNodeBeforeElement"
+    />
+    <div
+      slot="headerBottomElement"
+    />
+    <div
+      slot="beforeInputElement"
+    />
+    <div
+      slot="homeScreenHeaderBottomElement"
+    />
+    <div
+      slot="homeScreenAfterStartersElement"
+    />
+    <div
+      slot="homeScreenBeforeInputElement"
+    />
+    <div
+      slot="customPanelElement"
+    />
+  </cds-aichat-react>
 </div>
 `;
