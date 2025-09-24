@@ -30,8 +30,9 @@ npm run test:watch
 2. Update the `@carbon/ai-chat` version to `0.4.0`, `0.5.0`, or `0.5.1`
 3. Run `npm install; npm test`
 
-Expected: Tests continue to pass
+Expected: Tests continue to pass or snapshots require updates
+
 Actual: Tests fail with errors like:
 ```
-    Cannot find module '@carbon/ai-chat' from 'src/__tests__/ChatContainer.test.tsx'
+Cannot find module '@carbon/ai-chat' from 'src/__tests__/ChatContainer.test.tsx'
 ```
