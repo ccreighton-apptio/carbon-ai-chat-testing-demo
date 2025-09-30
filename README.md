@@ -27,7 +27,8 @@ npm run test:watch
 ## Repro demo
 
 1. Run `npm install; npm test` to validate that the tests currently pass
-2. Update the `@carbon/ai-chat` version to `0.4.0`, `0.5.0`, or `0.5.1`
+2. Update the `@carbon/ai-chat` version to `0.4.0`, `0.5.0`, `0.5.1`, or `1.0.0-rc.0`
+   - `rc.patch` contains the changes necessary for using `1.0.0-rc.0`, `git apply rc.patch`
 3. Run `npm install; npm test`
 
 Expected: Tests continue to pass or snapshots require updates
