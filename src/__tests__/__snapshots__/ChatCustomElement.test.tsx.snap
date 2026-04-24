@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ChatCustomElement should match snapshot 1`] = `
+<div
+  class="custom-chat-element cds-aichat--hidden"
+>
+  <cds-aichat-react>
+    <div
+      slot="aiTooltipAfterDescriptionElement"
+    />
+    <div
+      slot="welcomeNodeBeforeElement"
+    />
+    <div
+      slot="headerBottomElement"
+    />
+    <div
+      slot="beforeInputElement"
+    />
+    <div
+      slot="homeScreenHeaderBottomElement"
+    />
+    <div
+      slot="homeScreenAfterStartersElement"
+    />
+    <div
+      slot="homeScreenBeforeInputElement"
+    />
+    <div
+      slot="customPanelElement"
+    />
+  </cds-aichat-react>
+</div>
+`;
