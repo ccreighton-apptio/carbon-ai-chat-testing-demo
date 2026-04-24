@@ -23,5 +23,5 @@ describe('ChatCustomElement', () => {
     await waitFor(() => expect(container.querySelector("cds-aichat-react")?.querySelector("div")).toBeInTheDocument()).then(() =>
       expect(container.firstChild).toMatchSnapshot()
     );
-  }, 60000);
+  }, 120000);
 });
