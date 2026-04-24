@@ -7,12 +7,10 @@ describe('ChatContainer', () => {
     const { container } = await act(() =>
       render(
         <ChatContainer
-          config={{
-            messaging: {
-              customSendMessage(request, requestOptions, instance) {
-                console.log("customSendMessage");
-              },
-            }
+          messaging={{
+            customSendMessage(request, requestOptions, instance) {
+              console.log("customSendMessage");
+            },
           }}
           data-testid="chat-container"
         />

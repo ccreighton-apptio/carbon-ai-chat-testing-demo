@@ -2,8 +2,7 @@
 
 exports[`ChatCustomElement should match snapshot 1`] = `
 <div
-  class="custom-chat-element"
-  style="width: 0px; height: 0px;"
+  class="custom-chat-element cds-aichat--hidden"
 >
   <cds-aichat-react>
     <div

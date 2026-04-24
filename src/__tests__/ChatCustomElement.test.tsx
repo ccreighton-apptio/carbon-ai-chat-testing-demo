@@ -7,12 +7,10 @@ describe('ChatCustomElement', () => {
     const { container } = await act(() =>
       render(
         <ChatCustomElement
-          config={{
-            messaging: {
-              customSendMessage(request, requestOptions, instance) {
-                console.log("customSendMessage");
-              },
-            }
+          messaging={{
+            customSendMessage(request, requestOptions, instance) {
+              console.log("customSendMessage");
+            },
           }}
           className="custom-chat-element"
           data-testid="chat-custom-element"
