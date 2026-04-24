@@ -4,10 +4,8 @@ import { ChatContainer } from '@carbon/ai-chat';
 
 describe('ChatContainer', () => {
   it('should match snapshot', async () => {
-    let container: HTMLElement;
-
-    await act(async () => {
-      const result = render(
+    const { container } = await act(() =>
+      render(
         <ChatContainer
           config={{
             messaging: {
@@ -18,16 +16,11 @@ describe('ChatContainer', () => {
           }}
           data-testid="chat-container"
         />
-      );
-      container = result.container;
-    });
-
-    // Wait for the web component's slot divs to be rendered
-    await waitFor(
-      () => expect(container.querySelector("cds-aichat-react")?.querySelector("div")).toBeInTheDocument(),
-      { timeout: 10000 }
+      )
     );
-
-    expect(container!.firstChild).toMatchSnapshot();
+        
+    await waitFor(() => expect(container.querySelector("cds-aichat-react")?.querySelector("div")).toBeInTheDocument()).then(() =>
+      expect(container.firstChild).toMatchSnapshot()
+    );
   }, 60000);
 });
